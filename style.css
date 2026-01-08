@@ -1,0 +1,32 @@
+body {
+  background: #020617;
+  color: white;
+  font-family: Arial;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 12px;
+}
+
+.option {
+  background: #334155;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background: #6b7280;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #cbd5f5;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BazarovGPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>BazarovGPT Listening Test</h1>
+
+  <select id="topic">
+    <option value="daily">Daily Life</option>
+    <option value="food">Food</option>
+    <option value="mixed">Mixed</option>
+  </select>
+
+  <button id="start">START</button>
+
+  <div id="info"></div>
+  <div id="questions"></div>
+
+  <div class="footer">Bazarov & ChatGPT</div>
+</div>
+
+<script src="engine.js"></script>
+<script>
+fetch("data.json")
+  .then(res => res.json())
+  .then(data => {
+    const engine = new BazarovEngine(data);
+
+    document.getElementById("start").onclick = () => {
+      const topic = document.getElementById("topic").value;
+      engine.init(topic);
+      window.engine = engine;
+    };
+  });
+</script>
+</body>
+</html>

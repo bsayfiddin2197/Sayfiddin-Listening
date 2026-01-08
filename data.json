@@ -1,0 +1,41 @@
+{
+  "daily": {
+    "A1": [
+      {
+        "sentence": "I drink water every morning.",
+        "options": ["waiter", "water", "winter"],
+        "correct": 1
+      },
+      {
+        "sentence": "She is a student.",
+        "options": ["station", "student", "stadium"],
+        "correct": 1
+      }
+    ],
+    "A2": [
+      {
+        "sentence": "He goes to work by bus.",
+        "options": ["boss", "bus", "base"],
+        "correct": 1
+      }
+    ]
+  },
+  "food": {
+    "B1": [
+      {
+        "sentence": "He ordered coffee before breakfast.",
+        "options": ["copy", "coffee", "cough"],
+        "correct": 1
+      }
+    ]
+  },
+  "mixed": {
+    "C1": [
+      {
+        "sentence": "She felt exhausted throughout the evening.",
+        "options": ["evening", "living", "leaving"],
+        "correct": 0
+      }
+    ]
+  }
+}
